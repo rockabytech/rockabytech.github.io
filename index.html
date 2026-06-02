@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockabyTech – We Build Rock-Solid Software</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+        .logo {
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #f12711, #f5af19);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 300;
+            color: #ccc;
+        }
+        .description {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #aaa;
+            line-height: 1.6;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        input[type="email"] {
+            padding: 15px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            outline: none;
+            border: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+        input[type="email"]:focus {
+            border-color: #f5af19;
+        }
+        button {
+            padding: 15px 20px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #f12711, #f5af19);
+            color: #fff;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        .social-links {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-links a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #f5af19;
+        }
+        .footer-note {
+            margin-top: 40px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">ROCKABYTECH</h1>
+        <p class="tagline">We build rock-solid software from the ground up.</p>
+        <p class="description">
+            A software studio forging the next generation of tools, apps, and platforms.
+            We’re currently in stealth mode, crafting something extraordinary.
+            Be the first to know when we launch.
+        </p>
+        <form id="signup-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Notify Me</button>
+            </div>
+        </form>
+        <div class="social-links">
+            <a href="https://twitter.com/rockabytech" target="_blank">Twitter</a>
+            <a href="https://github.com/rockabytech" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/company/rockabytech" target="_blank">LinkedIn</a>
+        </div>
+        <p class="footer-note">&copy; 2025 RockabyTech. All rights reserved.</p>
+    </div>
+</body>
+</html>
